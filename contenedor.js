@@ -42,7 +42,7 @@ class Contenedor {
         return this.lista
     }
 
-    async getById(id) {
+    getById(id) {
         
         return this.lista.find(item => item.id === id)
     }
@@ -51,6 +51,12 @@ class Contenedor {
         await this.write()
     }
     
+  random(){
+
+      let result = Math.floor(Math.random() *this.lista.length +1)
+    
+      return result
+  }
 }
 
 module.exports = Contenedor
