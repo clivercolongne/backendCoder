@@ -52,17 +52,5 @@ class Contenedor {
     }
     
 }
- const test = async function ejecutar() {
-   usuario1 = new Contenedor(
-    'cliver.JSON'
-)
-
-await usuario1.save({nombre:"cliver", edad:18})
-await usuario1.getAll()
-await usuario1.getById(1)
-await usuario1.deleteAll()
-await usuario1.deleteById(1)
-}
-test()
 
 module.exports = Contenedor
