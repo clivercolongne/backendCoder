@@ -47,7 +47,7 @@ const connectedServer = app.listen(PORT, () => {
 app.get('/productos', (req, res) => {
    res.send(usuario1.getAll())
 });
-app.get('/productosRandom', (req, res) => {
+app.get('/productoRandom', (req, res) => {
    res.send(usuario1.getById(usuario1.random()))
 });
  
